@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.mutefrog.myfolio.view.fragment.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_dashboard"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_bank_account_home"
+            app:destination="@id/navigation_bank_account_home" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_personal_iou_home"
+            app:destination="@id/navigation_personal_iou_home" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_category_screen"
+            app:destination="@id/navigation_category_screen" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_card_home"
+            app:destination="@id/navigation_card_home" />
+
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_contact_home"
+            app:destination="@id/navigation_contact_home" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_subscription"
+            app:destination="@id/navigation_subscription" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_video_player"
+            app:destination="@id/navigation_video_player" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_inapp_browser"
+            app:destination="@id/navigation_inapp_browser" />
+
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_add_nominee"
+            app:destination="@id/navigation_add_nominee" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.mutefrog.myfolio.view.fragment.ProfileFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_profile">
+
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_personal_information"
+            app:destination="@id/navigation_personal_information" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_security"
+            app:destination="@id/navigation_security" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_nominee"
+            app:destination="@id/navigation_nominee" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_inapp_browser"
+            app:destination="@id/navigation_inapp_browser" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_delete_account_otp"
+            app:destination="@id/navigation_delete_account_otp" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.mutefrog.myfolio.view.fragment.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+
+    <fragment
+        android:id="@+id/navigation_add_bank_account"
+        android:name="com.mutefrog.myfolio.view.fragment.AddBankAccountFragment"
+        android:label="@string/bank_account"
+        tools:layout="@layout/fragment_add_bank_account">
+
+        <argument
+            android:name="selectedType"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="bankAccountJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_bank_account_home"
+        android:name="com.mutefrog.myfolio.view.fragment.BankAccountHomeFragment"
+        android:label="@string/bank_account"
+        tools:layout="@layout/fragment_bank_account_home">
+        <action
+            android:id="@+id/action_navigation_bank_account_home_to_navigation_add_bank_account"
+            app:destination="@id/navigation_add_bank_account" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_personal_iou_home"
+        android:name="com.mutefrog.myfolio.view.fragment.PersonalIouHomeFragment"
+        android:label="@string/personal_ious"
+        tools:layout="@layout/fragment_personal_iou_home">
+
+        <action
+            android:id="@+id/action_navigation_personal_iou_home_to_navigation_add_personal_iou"
+            app:destination="@id/navigation_add_personal_iou" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_add_personal_iou"
+        android:name="com.mutefrog.myfolio.view.fragment.AddPiouFragment"
+        android:label="@string/personal_ious"
+        tools:layout="@layout/fragment_add_piou">
+
+        <argument
+            android:name="dataJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="selectedType"
+            android:defaultValue=""
+            app:argType="string" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_category_screen"
+        android:name="com.mutefrog.myfolio.view.fragment.CategoryFragment"
+        android:label="@string/categories"
+        tools:layout="@layout/fragment_category">
+
+        <argument
+            android:name="categoryName"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="categoryNameId"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/action_navigation_category_screen_to_navigation_add_loan"
+            app:destination="@id/navigation_add_loan" />
+        <action
+            android:id="@+id/action_navigation_category_screen_to_navigation_loan_home"
+            app:destination="@id/navigation_loan_home" />
+        <action
+            android:id="@+id/action_navigation_category_screen_to_navigation_asset_home"
+            app:destination="@id/navigation_asset_home" />
+        <action
+            android:id="@+id/action_navigation_category_screen_to_navigation_add_asset"
+            app:destination="@id/navigation_add_asset" />
+        <action
+            android:id="@+id/action_navigation_category_screen_to_navigation_insurance_home"
+            app:destination="@id/navigation_insurance_home" />
+        <action
+            android:id="@+id/action_navigation_category_screen_to_navigation_add_insurance"
+            app:destination="@id/navigation_add_insurance" />
+        <action
+            android:id="@+id/action_navigation_category_screen_to_navigation_document_home"
+            app:destination="@id/navigation_document_home" />
+        <action
+            android:id="@+id/action_navigation_category_screen_to_navigation_add_document"
+            app:destination="@id/navigation_add_document" />
+        <action
+            android:id="@+id/action_navigation_category_screen_to_navigation_investment_home"
+            app:destination="@id/navigation_investment_home" />
+        <action
+            android:id="@+id/action_navigation_category_screen_to_navigation_add_investment"
+            app:destination="@id/navigation_add_investment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_personal_information"
+        android:name="com.mutefrog.myfolio.view.fragment.PersonalInformationFragment"
+        android:label="@string/personal_information"
+        tools:layout="@layout/fragment_personal_information">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_security"
+        android:name="com.mutefrog.myfolio.view.fragment.SecurityFragment"
+        android:label="@string/security"
+        tools:layout="@layout/fragment_security">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_nominee"
+        android:name="com.mutefrog.myfolio.view.fragment.NomineeHomeFragment"
+        android:label="@string/nominee_nominator_details"
+        tools:layout="@layout/fragment_nominee_home">
+
+        <action
+            android:id="@+id/action_navigation_nominee_to_navigation_add_nominee"
+            app:destination="@id/navigation_add_nominee" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_nominee"
+        android:name="com.mutefrog.myfolio.view.fragment.AddNomineeFragment"
+        android:label="@string/add_nominee"
+        tools:layout="@layout/fragment_add_nominee">
+
+        <argument
+            android:name="nomineeDataJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="nominatorDataJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_navigation_add_nominee_to_navigation_nominee_otp"
+            app:destination="@id/navigation_nominee_otp" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_nominee_otp"
+        android:name="com.mutefrog.myfolio.view.fragment.AddNomineeOTPFragment"
+        android:label="@string/add_nominee_otp"
+        tools:layout="@layout/fragment_add_nominee_otp">
+
+        <argument
+            android:name="id"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/action_navigation_nominee_otp_to_navigation_nominee"
+            app:destination="@id/navigation_nominee"
+            app:popUpTo="@id/navigation_nominee" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_delete_account_otp"
+        android:name="com.mutefrog.myfolio.view.fragment.DeleteAccountOTPFragment"
+        android:label="@string/delete_account_otp"
+        tools:layout="@layout/fragment_delete_account_otp">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_add_loan"
+        android:name="com.mutefrog.myfolio.view.fragment.AddLoanFragment"
+        android:label="@string/loan"
+        tools:layout="@layout/fragment_add_loan">
+
+        <argument
+            android:name="loanJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="selectedCategoryJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_loan_home"
+        android:name="com.mutefrog.myfolio.view.fragment.LoanHomeFragment"
+        android:label="@string/loan"
+        tools:layout="@layout/fragment_loan_home">
+
+        <argument
+            android:name="loanType"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="selectedCategoryJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_navigation_loan_home_to_navigation_add_loan"
+            app:destination="@id/navigation_add_loan" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_card_home"
+        android:name="com.mutefrog.myfolio.view.fragment.CardHomeFragment"
+        android:label="@string/card"
+        tools:layout="@layout/fragment_card_home">
+
+        <action
+            android:id="@+id/action_navigation_card_home_to_navigation_add_card"
+            app:destination="@id/navigation_add_card" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_card"
+        android:name="com.mutefrog.myfolio.view.fragment.AddCardFragment"
+        android:label="@string/card"
+        tools:layout="@layout/fragment_add_card">
+
+        <argument
+            android:name="selectedType"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="cardDataJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_asset_home"
+        android:name="com.mutefrog.myfolio.view.fragment.AssetsHomeFragment"
+        android:label="@string/asset"
+        tools:layout="@layout/fragment_asset_home">
+
+        <argument
+            android:name="typeId"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="typeName"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_navigation_asset_home_to_navigation_add_asset"
+            app:destination="@id/navigation_add_asset" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_asset"
+        android:name="com.mutefrog.myfolio.view.fragment.AddAssetFragment"
+        android:label="@string/asset"
+        tools:layout="@layout/fragment_add_asset">
+
+        <argument
+            android:name="dataJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="selectedCategoryJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_insurance_home"
+        android:name="com.mutefrog.myfolio.view.fragment.InsuranceHomeFragment"
+        android:label="@string/insurance"
+        tools:layout="@layout/fragment_insurance_home">
+
+        <argument
+            android:name="selectedCategoryJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_navigation_insurance_home_to_navigation_add_insurance"
+            app:destination="@id/navigation_add_insurance" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_insurance"
+        android:name="com.mutefrog.myfolio.view.fragment.AddInsuranceFragment"
+        android:label="@string/add_insurace"
+        tools:layout="@layout/fragment_add_insurance">
+
+        <argument
+            android:name="dataJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="selectedCategoryJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_contact_home"
+        android:name="com.mutefrog.myfolio.view.fragment.ContactHomeFragment"
+        android:label="@string/contact"
+        tools:layout="@layout/fragment_contacts_home">
+
+        <argument
+            android:name="selectedCategoryJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_navigation_contact_home_to_navigation_add_contact"
+            app:destination="@id/navigation_add_contact" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_contact"
+        android:name="com.mutefrog.myfolio.view.fragment.AddContactFragment"
+        android:label="@string/add_contact"
+        tools:layout="@layout/fragment_add_contact">
+
+        <argument
+            android:name="dataJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="selectedCategoryJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_subscription"
+        android:name="com.mutefrog.myfolio.view.fragment.SubscriptionFragment"
+        android:label="@string/subscription"
+        tools:layout="@layout/fragment_subscription">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_document_home"
+        android:name="com.mutefrog.myfolio.view.fragment.DocumentHomeFragment"
+        android:label="@string/document"
+        tools:layout="@layout/fragment_document_home">
+
+        <argument
+            android:name="selectedCategoryJson"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/action_navigation_document_home_to_navigation_add_document"
+            app:destination="@id/navigation_add_document" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_document"
+        android:name="com.mutefrog.myfolio.view.fragment.AddDocumentFragment"
+        android:label="@string/add_document"
+        tools:layout="@layout/fragment_add_document">
+
+        <argument
+            android:name="dataJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="selectedCategoryJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_video_player"
+        android:name="com.mutefrog.myfolio.view.fragment.VideoPlayerFragment"
+        android:label="@string/video_player"
+        tools:layout="@layout/fragment_video_player">
+
+        <argument
+            android:name="videoUrl"
+            android:defaultValue=""
+            app:argType="string" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_inapp_browser"
+        android:name="com.mutefrog.myfolio.view.fragment.InAppBrowserFragment"
+        android:label=""
+        tools:layout="@layout/fragment_inapp_browser">
+
+        <argument
+            android:name="url"
+            android:defaultValue=""
+            app:argType="string" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_investment_home"
+        android:name="com.mutefrog.myfolio.view.fragment.InvestmentsHomeFragment"
+        android:label="@string/investment"
+        tools:layout="@layout/fragment_investment_home">
+
+        <argument
+            android:name="selectedCategoryJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_navigation_investment_home_to_navigation_add_investment"
+            app:destination="@id/navigation_add_investment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_investment"
+        android:name="com.mutefrog.myfolio.view.fragment.AddInvestmentFragment"
+        android:label="@string/add_investment"
+        tools:layout="@layout/fragment_add_investment">
+
+        <argument
+            android:name="dataJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="selectedCategoryJson"
+            android:defaultValue=""
+            app:argType="string" />
+
+    </fragment>
+
+
+</navigation>

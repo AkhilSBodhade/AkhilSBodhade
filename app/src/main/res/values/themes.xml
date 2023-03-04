@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyFolio" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/primary_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name = "NoActionBar" parent = "@android:style/Theme.Holo.Light">
+        <item name = "android:windowActionBar">false</item>
+        <item name = "android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ThemeOverlay.SearchView" parent="">
+        <item name="backgroundColor">@color/white</item>
+        <!-- Text Size -->
+        <item name="android:textSize">14sp</item>
+        <!-- Query Text Color -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <!-- Hint Color -->
+        <item name="android:textColorHint">@color/gray</item>
+        <!-- Icon Color -->
+        <item name="android:tint">@color/black</item>
+
+        <item name="android:editTextColor">@color/black</item>
+        <item name="fontFamily">@font/dmsans_medium</item>
+    </style>
+
+
+</resources>

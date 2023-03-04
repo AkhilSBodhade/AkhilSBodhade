@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.ProfileFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_profile_user_icon"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="65dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:fontFamily="@font/dmsans_bold"
+            android:background="@drawable/bg_profile_user_icon_circle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/dmsans_bold"
+            android:text="User"
+            android:textColor="#1C1717"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:text="user@myfolio.com"
+            android:textColor="#1C1717"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_profile_personal_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:drawableEnd="@drawable/img_profile_right_arrow"
+            android:fontFamily="@font/dmsans_regular"
+            android:padding="18dp"
+            android:text="@string/personal_information"
+            android:textColor="@color/color_profile_row_text"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_profile_security"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:drawableEnd="@drawable/img_profile_right_arrow"
+            android:fontFamily="@font/dmsans_regular"
+            android:padding="18dp"
+            android:text="@string/security"
+            android:textColor="@color/color_profile_row_text"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_profile_nominee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:drawableEnd="@drawable/img_profile_right_arrow"
+            android:fontFamily="@font/dmsans_regular"
+            android:padding="18dp"
+            android:text="@string/nominee_nominator"
+            android:textColor="@color/color_profile_row_text"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_profile_refer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:drawableEnd="@drawable/img_profile_right_arrow"
+            android:fontFamily="@font/dmsans_regular"
+            android:padding="18dp"
+            android:text="@string/refer_a_friend"
+            android:textColor="@color/color_profile_row_text"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_profile_about_myfolio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:padding="18dp"
+            android:text="@string/about_myfolio"
+            android:textColor="@color/color_profile_row_text"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_profile_tnc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:padding="18dp"
+            android:text="@string/tnc"
+            android:textColor="@color/color_profile_row_text"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_profile_delete_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:padding="18dp"
+            android:text="@string/delete_account"
+            android:textColor="@color/color_profile_row_text"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_profile_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:padding="18dp"
+            android:text="@string/logout"
+            android:textColor="@color/color_profile_row_text"
+            android:textSize="18sp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:padding="18dp"
+            android:visibility="invisible"
+            android:textColor="@color/color_profile_row_text"
+            android:textSize="18sp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</ScrollView>

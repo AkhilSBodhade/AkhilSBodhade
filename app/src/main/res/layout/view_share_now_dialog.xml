@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsans_bold"
+                android:text="What is share now?"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:padding="7dp"
+                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_custom_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dmsans_regular"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet erat fringilla, auctor odio non, maximus lacus. Pellentesque malesuada orci sed quam scelerisque venenatis. Pellentesque tincidunt, elit pulvinar elementum lacinia, nibh urna suscipit arcu, sed cursus nulla neque ut erat. Aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet erat fringilla, auctor odio non, maximus lacus. Pellentesque malesuada orci sed quam scelerisque venenatis. Pellentesque tincidunt, elit pulvinar elementum lacinia, nibh urna suscipit arcu, sed cursus nulla neque ut erat. Aliqua"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

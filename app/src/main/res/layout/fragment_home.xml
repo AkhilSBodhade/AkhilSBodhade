@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_home"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".view.fragment.HomeFragment">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_marginTop="15dp"
+            android:background="#F8FBFF"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_home_title_myfolio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/dmsans_bold"
+                android:textColor="@color/tutorial_dash_gray"
+                android:textSize="15sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/dmsans_regular"
+                android:gravity="end"
+                android:text="@string/welcome"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_home_title_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/dmsans_bold"
+                android:gravity="end"
+                android:text="User"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:gravity="end"
+            android:text="@string/categories"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <GridView
+            android:id="@+id/gridViewHomeCategories"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="#F8FBFF"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3"
+            android:padding="5dp"
+            android:verticalSpacing="10dp"
+            tools:listitem="@layout/view_home_grid_category" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/bg_subscription_box"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/dmsans_regular"
+                android:gravity="end"
+                android:text="Switch to"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsans_bold"
+                android:gravity="end"
+                android:text="Premium"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_home_upgrade_subscription"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_white_rounded"
+                android:fontFamily="@font/dmsans_regular"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="Upgrade from ₹ 399 a year"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_add_nominee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/view_add_first_nominee" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:gravity="end"
+            android:text="@string/did_you_know"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewDidYouKnow"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="24dp"
+            tools:listitem="@layout/view_did_you_know_list_row" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:fontFamily="@font/dmsans_bold"
+            android:gravity="end"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>
+

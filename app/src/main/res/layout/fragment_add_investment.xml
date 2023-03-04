@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- <<<<<<<  Equity  >>>>>>>  -->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_add_investment_item_equity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_equity_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_equity_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_equity_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_equity_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_equity_broker_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_equity_broker_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_equity_customer_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_equity_customer_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_equity_no_shares"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_equity_no_shares"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="numberSigned"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_equity_amt_invested"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_equity_amt_invested"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="numberDecimal"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- <<<<<<<  MF  >>>>>>>  -->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_add_investment_item_mf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_mf_fund_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_mf_fund_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_mf_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_mf_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_mf_fund_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_mf_fund_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_mf_broker_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_mf_broker_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_mf_amt_invested"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_mf_amt_invested"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="numberDecimal"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- <<<<<<<  SIP  >>>>>>>  -->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_add_investment_item_sip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_sip_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_sip_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_sip_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_sip_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_sip_broker_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_sip_broker_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_sip_amount_invested"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_sip_amount_invested"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="numberDecimal"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_sip_start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_sip_start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_sip_end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_sip_end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- <<<<<<<  FD  >>>>>>>  -->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_add_investment_item_fd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_add_investment_fd_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_fd_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_fd_bank_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_fd_bank_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_fd_branch_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_fd_branch_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_fd_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_fd_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_fd_amt_deposited"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_fd_amt_deposited"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_fd_maturity_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_fd_maturity_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_fd_maturity_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_fd_maturity_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- <<<<<<<  CRYPTO  >>>>>>>  -->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_add_investment_item_crypto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_crypto_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_crypto_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_crypto_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_crypto_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_crypto_broker_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_crypto_broker_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_crypto_qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_crypto_qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_crypto_amt_invested"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_crypto_amt_invested"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- <<<<<<<  NPS  >>>>>>>  -->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_add_investment_item_nps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_nps_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_nps_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_nps_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_nps_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_nps_pra_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_nps_pra_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_nps_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_nps_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- <<<<<<<  PPF  >>>>>>>  -->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_add_investment_item_ppf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_ppf_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_ppf_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_ppf_acc_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_ppf_acc_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_ppf_maturity_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_ppf_maturity_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_ppf_maturity_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_ppf_maturity_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- <<<<<<<  BONDS  >>>>>>>  -->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_add_investment_item_bond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_bond_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_bond_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_bond_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_bond_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_bond_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_bond_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_bond_principal_amt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_bond_principal_amt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="numberDecimal"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_bond_maturity_amt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_bond_maturity_amt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="numberDecimal"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- <<<<<<<  PF  >>>>>>>  -->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_add_investment_item_pf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_pf_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_pf_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_pf_uan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_pf_uan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_pf_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_pf_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_pf_employer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_pf_employer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- <<<<<<<  CERTIFICATES  >>>>>>>  -->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_add_investment_item_cert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_cert_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_cert_acc_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_cert_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_cert_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add_investment_cert_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:textColor="@color/tutorial_desc_color"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_add_investment_cert_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <!-- Add Comment -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_add_investment_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/dmsans_regular"
+                android:text="@string/add_comment"
+                android:textColor="@color/tutorial_desc_color"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_add_investment_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edt_text_bg"
+                android:ems="10"
+                android:fontFamily="@font/dmsans_regular"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textSize="16sp" />
+
+            <!-- Share Now  -->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="@string/add_share_now"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_share_now_info"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_info" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/yes"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_add_investment_share_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:showText="true" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <include layout="@layout/view_upload_file" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <include layout="@layout/view_form_bottom" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

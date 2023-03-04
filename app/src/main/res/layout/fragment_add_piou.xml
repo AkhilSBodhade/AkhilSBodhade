@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!--            1. Name Of Lender-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/txt_i_am_the"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:fontFamily="@font/dmsans_regular"-->
+<!--                android:textColor="@color/tutorial_desc_color"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:background="@drawable/edt_text_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <androidx.appcompat.widget.AppCompatSpinner-->
+<!--                    android:id="@+id/spinner_i_am_the"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="54dp"-->
+<!--                    android:entries="@array/PiouTypes"-->
+<!--                    android:fontFamily="@font/dmsans_regular"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- LENDER UI -->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+
+                    <!--    Lender :        2. Reason For Lending-->
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_lender_reason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:textColor="@color/tutorial_desc_color"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edit_lender_reason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edt_text_bg"
+                        android:ems="10"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:inputType="textPersonName"
+                        android:padding="15dp"
+                        android:textSize="16sp" />
+
+
+                    <!--   Lender :         3. Total Amount Lended-->
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_lender_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:textColor="@color/tutorial_desc_color"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edit_lender_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edt_text_bg"
+                        android:ems="10"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:inputType="numberDecimal"
+                        android:padding="15dp"
+                        android:textSize="16sp" />
+
+
+                    <!--    Lender :        4. Borrower's Name-->
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_lender_borrower_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:textColor="@color/tutorial_desc_color"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edit_lender_borrower_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edt_text_bg"
+                        android:ems="10"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:inputType="textPersonName"
+                        android:padding="15dp"
+                        android:textSize="16sp" />
+
+                    <!--    Lender :        5. Currency (Dropdown for INR/USD)-->
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_currency"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:textColor="@color/tutorial_desc_color"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edt_text_bg"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spinner_currency"
+                            android:layout_width="match_parent"
+                            android:layout_height="54dp"
+                            android:entries="@array/CurrencyTypes"
+                            android:fontFamily="@font/dmsans_regular"
+                            android:padding="15dp"
+                            android:textSize="16sp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <!--    Lender :        6. Amount Returned-->
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_lender_amount_returned"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:textColor="@color/tutorial_desc_color"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edit_lender_amount_returned"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edt_text_bg"
+                        android:ems="10"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:inputType="numberDecimal"
+                        android:padding="15dp"
+                        android:textSize="16sp" />
+
+                    <!--    Lender :        7. Pending Amount-->
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_lender_pending_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:textColor="@color/tutorial_desc_color"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edit_lender_pending_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edt_text_bg"
+                        android:ems="10"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:inputType="numberDecimal"
+                        android:padding="15dp"
+                        android:textSize="16sp" />
+
+
+                    <!--    Lender :        8. Deadline-->
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_lender_deadline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:textColor="@color/tutorial_desc_color"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edit_lender_deadline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edt_text_bg"
+                        android:drawableEnd="@drawable/ic_calendar"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:inputType="textPersonName"
+                        android:padding="15dp"
+                        android:textSize="16sp" />
+
+
+                    <!--     Lender :       9. Add Comment-->
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_lender_comments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:textColor="@color/tutorial_desc_color"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edit_lender_comments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edt_text_bg"
+                        android:ems="10"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:textSize="16sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </FrameLayout>
+
+
+            <!--            10. Share Now-->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="@string/add_share_now"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_share_now_info"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_info" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/yes"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_add_piou_share_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:showText="true" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <include layout="@layout/view_upload_file"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <include layout="@layout/view_form_bottom" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

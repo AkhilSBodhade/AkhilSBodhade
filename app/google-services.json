@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "983209111495",
+    "project_id": "myfolio-stage",
+    "storage_bucket": "myfolio-stage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983209111495:android:373e2296baf72306f9f3e2",
+        "android_client_info": {
+          "package_name": "com.mutefrog.myfolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983209111495-jjllp8i006tebo595se4uu9c3t9uh5aq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1oyipxQ8eKdIUn7iP9QSLT3bwj0WBSjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983209111495-jjllp8i006tebo595se4uu9c3t9uh5aq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "983209111495-q94i5hrsre3sjhj5aakl904g3po4tvs3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.gravitystage.folio"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

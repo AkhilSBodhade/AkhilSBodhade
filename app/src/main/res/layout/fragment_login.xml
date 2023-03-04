@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="35dp"
+    tools:context=".view.activity.TutorialActivity">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_onboarding"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/dmsans_bold"
+        android:text="@string/log_in"
+        android:textColor="@color/black"
+        android:textSize="48sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:text="@string/enter_registered_email_id"
+        android:textColor="@color/tutorial_desc_color"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextLogInEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edt_text_bg"
+        android:ems="10"
+        android:fontFamily="@font/dmsans_regular"
+        android:inputType="textEmailAddress"
+        android:padding="18dp"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:text="@string/login_otp_instr"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:text="@string/signup_email_share_instr"
+        android:textColor="@color/tutorial_desc_color"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dmsans_regular"
+            android:text="@string/new_to_myfolio"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/login_cta_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/dmsans_bold"
+            android:padding="10dp"
+            android:text="@string/sign_up"
+            android:textColor="@color/primary_blue"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login_next"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_blue_rounded"
+        android:fontFamily="@font/dmsans_regular"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

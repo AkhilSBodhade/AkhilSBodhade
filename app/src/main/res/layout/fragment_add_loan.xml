@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Type Of Loan   -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_add_loan_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:fontFamily="@font/dmsans_regular"
+                android:textColor="@color/tutorial_desc_color"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edt_text_bg"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinner_add_loan_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:entries="@array/LoanTypes"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <!-- Purpose-->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_add_loan_purpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/dmsans_regular"
+                android:textColor="@color/tutorial_desc_color"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_add_loan_purpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edt_text_bg"
+                android:ems="10"
+                android:fontFamily="@font/dmsans_regular"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textSize="16sp" />
+
+            <!-- Institute-->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_add_loan_institute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/dmsans_regular"
+                android:textColor="@color/tutorial_desc_color"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_add_loan_institute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edt_text_bg"
+                android:ems="10"
+                android:fontFamily="@font/dmsans_regular"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textSize="16sp" />
+
+            <!-- Account Holder Name  -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_add_loan_acc_holder_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/dmsans_regular"
+                android:textColor="@color/tutorial_desc_color"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_add_loan_acc_holder_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edt_text_bg"
+                android:ems="10"
+                android:fontFamily="@font/dmsans_regular"
+                android:digits="abcdefghijklmnopqrstuvwxyz"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textSize="16sp" />
+
+            <!-- Loan Account Number  -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_add_loan_acc_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/dmsans_regular"
+                android:textColor="@color/tutorial_desc_color"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_add_loan_acc_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edt_text_bg"
+                android:ems="10"
+                android:fontFamily="@font/dmsans_regular"
+                android:inputType="numberSigned"
+                android:padding="15dp"
+                android:textSize="16sp" />
+
+            <!-- Loan Amount  -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_add_loan_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/dmsans_regular"
+                android:textColor="@color/tutorial_desc_color"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_add_loan_amout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edt_text_bg"
+                android:ems="10"
+                android:fontFamily="@font/dmsans_regular"
+                android:inputType="numberSigned"
+                android:digits="0123456789."
+                android:padding="15dp"
+                android:textSize="16sp" />
+
+
+            <!-- EMI  -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_add_loan_emi_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/dmsans_regular"
+                android:textColor="@color/tutorial_desc_color"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_add_loan_emi_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edt_text_bg"
+                android:ems="10"
+                android:fontFamily="@font/dmsans_regular"
+                android:inputType="numberSigned"
+                android:padding="15dp"
+                android:textSize="16sp" />
+
+            <!--    Start Date -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_add_loan_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/dmsans_regular"
+                android:textColor="@color/tutorial_desc_color"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_add_loan_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edt_text_bg"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:ems="10"
+                android:focusable="false"
+                android:fontFamily="@font/dmsans_regular"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textSize="16sp" />
+
+            <!--    End Date -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_add_loan_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/dmsans_regular"
+                android:textColor="@color/tutorial_desc_color"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_add_loan_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edt_text_bg"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:ems="10"
+                android:focusable="false"
+                android:fontFamily="@font/dmsans_regular"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textSize="16sp" />
+
+
+            <!--    Status -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_add_loan_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/dmsans_regular"
+                android:textColor="@color/tutorial_desc_color"
+                android:textSize="14sp" />
+
+
+            <RadioGroup
+                android:id="@+id/rg_loan_status"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="5dp"
+                android:checkedButton="@+id/rb_active"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_active"
+                    android:layout_width="105dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:gravity="center"
+                    android:text="@string/active"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb_complete"
+                    android:layout_width="105dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:gravity="center"
+                    android:text="@string/complete"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+
+            <!-- Add Comment -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_add_loan_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/add_comment"
+                android:fontFamily="@font/dmsans_regular"
+                android:textColor="@color/tutorial_desc_color"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_add_loan_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edt_text_bg"
+                android:ems="10"
+                android:fontFamily="@font/dmsans_regular"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textSize="16sp" />
+
+
+            <!--      Share Now-->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="@string/add_share_now"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_share_now_info"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_info" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/yes"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_add_loan_share_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:showText="true" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <include layout="@layout/view_upload_file"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <include layout="@layout/view_form_bottom" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/row_bg"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_investment_item_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/dmsans_regular"
+                android:text="Lorem Ipsum Investment"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_investment_item_menu"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/ic_more" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/bg_tag_green"
+                android:fontFamily="@font/dmsans_regular"
+                android:padding="5dp"
+                android:text="  Active  "
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_investment_item_share_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/bg_tag_blue"
+                android:fontFamily="@font/dmsans_regular"
+                android:padding="5dp"
+                android:text="  Share Now  "
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- EQUITY -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_investment_item_equity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Number of Shares"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_equity_no_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Amount Invested"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_equity_amount_invested"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Broker Name"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_equity_broker_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- MUTUAL FUND -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_investment_item_mf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Fund Type"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_mf_fund_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Broker Name"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_mf_broker_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Amount Invested"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_mf_amount_invested"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- SIP -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_investment_item_sip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Amount Invested"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_sip_amount_invested"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Broker Name"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_sip_broker_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- FIXED DEPOSIT -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_investment_item_fd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Amount Deposited"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_fd_amount_invested"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Maturity Date"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_fd_maturity_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Fixed Deposite Number"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_fd_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- RECURRING DEPOSIT -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_investment_item_rd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Recurring Deposit Number "
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_rd_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Monthly Installment"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_rd_monthly_installment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- CRYPTO -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_investment_item_crypto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Quantity"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_crypto_qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Amount Invested"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_crypto_amt_invested"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Broker Name"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_crypto_broker_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- NPS -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_investment_item_nps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="PRA Number"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_nps_pra_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- PPF -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_investment_item_ppf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="PPF Account Number"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_ppf_acc_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Maturity Date"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_ppf_maturity_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- BONDS -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_investment_item_bond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Bond Number"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_bond_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Maturity Amount"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_bond_maturity_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- CERTIFICATE -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_investment_item_cert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="Certificate Number"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_cert_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- PF -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_investment_item_pf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="UAN Number"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_investment_item_pf_uan_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Attachment-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/tutorial_dash_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsans_regular"
+                android:text="@string/attachment"
+                android:textAllCaps="true"
+                android:textColor="@color/tutorial_dash_gray"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_attachment"
+                android:fontFamily="@font/dmsans_bold"
+                android:text=""
+                android:textColor="@color/tutorial_dash_gray"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

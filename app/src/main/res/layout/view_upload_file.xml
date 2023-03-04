@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_upload_file"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_upload" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:gravity="center"
+        android:text="Capture / Upload Your File"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:gravity="center"
+        android:text="File Format Jpeg, Jpg, H-Veic, Png And Pdf"
+        android:textColor="#A2A2A2"
+        android:textSize="12sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:gravity="center"
+        android:text="Max file size upload limit is 24 MB"
+        android:textColor="#A2A2A2"
+        android:textSize="12sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

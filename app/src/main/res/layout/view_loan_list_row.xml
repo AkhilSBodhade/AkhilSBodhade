@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/row_bg"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_loan_item_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/dmsans_regular"
+                android:text="Lorem Ipsum Loan"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_loan_item_menu"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/ic_more" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_loan_item_status_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/bg_tag_green"
+                android:fontFamily="@font/dmsans_regular"
+                android:padding="5dp"
+                android:text="  Active  "
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_loan_item_duration_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_tag_green"
+                android:fontFamily="@font/dmsans_regular"
+                android:padding="5dp"
+                android:text="  Duration  "
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_loan_item_share_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_tag_blue"
+                android:fontFamily="@font/dmsans_regular"
+                android:padding="5dp"
+                android:text="  Share Now  "
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="@string/loan_amount"
+                    android:textAllCaps="true"
+                    android:textColor="@color/tutorial_dash_gray"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_loan_item_loan_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="@string/start_date"
+                    android:textAllCaps="true"
+                    android:textColor="@color/tutorial_dash_gray"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_loan_item_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="@string/end_date"
+                    android:textAllCaps="true"
+                    android:textColor="@color/tutorial_dash_gray"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_loan_item_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/tutorial_dash_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsans_regular"
+                android:text="@string/attachment"
+                android:textAllCaps="true"
+                android:textColor="@color/tutorial_dash_gray"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_attachment"
+                android:fontFamily="@font/dmsans_bold"
+                android:text=""
+                android:textColor="@color/tutorial_dash_gray"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

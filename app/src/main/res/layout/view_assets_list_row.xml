@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/row_bg"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_asset_item_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/dmsans_regular"
+                android:text="Lorem Ipsum Asset"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_asset_item_menu"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/ic_more" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/bg_tag_green"
+                android:fontFamily="@font/dmsans_regular"
+                android:padding="5dp"
+                android:text="  Active  "
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_asset_item_share_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/bg_tag_blue"
+                android:fontFamily="@font/dmsans_regular"
+                android:padding="5dp"
+                android:text="  Share Now  "
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- PROPERTY -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_asset_item_property"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="@string/address"
+                    android:textAllCaps="true"
+                    android:textColor="@color/tutorial_dash_gray"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_asset_item_property_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="@string/owner"
+                    android:textAllCaps="true"
+                    android:textColor="@color/tutorial_dash_gray"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_asset_item_property_owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="@string/value"
+                    android:textAllCaps="true"
+                    android:textColor="@color/tutorial_dash_gray"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_asset_item_property_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="@string/property_type"
+                    android:textAllCaps="true"
+                    android:textColor="@color/tutorial_dash_gray"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_asset_item_property_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- VEHICLE -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_asset_item_vehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="@string/model_number"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_asset_item_vehicle_model_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="@string/registration_number"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_asset_item_vehicle_reg_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="@string/insurance_validity"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_asset_item_vehicle_insurance_validity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- LIQUIDITY -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_asset_item_liquidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="@string/item_type"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_asset_item_liq_item_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="@string/item_quantity"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_asset_item_liq_item_qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="@string/item_weight"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_asset_item_liq_item_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- COLLECTABLE -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_asset_item_collectable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="@string/item_quantity"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_asset_item_collectable_qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="@string/txt_nominee"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tutorial_dash_gray"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_asset_item_collectable_nominee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Attachment-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/tutorial_dash_gray" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsans_regular"
+                android:text="@string/attachment"
+                android:textAllCaps="true"
+                android:textColor="@color/tutorial_dash_gray"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_attachment"
+                android:fontFamily="@font/dmsans_bold"
+                android:text=""
+                android:textColor="@color/tutorial_dash_gray"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

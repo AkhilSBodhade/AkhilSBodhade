@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/view_tutorial_done"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/image_onboarding"
+            android:layout_width="match_parent"
+            android:layout_height="461dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_intro_5" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_onboarding"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:text="@string/lets_get"
+            android:textColor="@color/black"
+            android:textSize="38sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_onboarding"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/dmsans_regular"
+            android:text="@string/organized"
+            android:textColor="@color/black"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_tutorial_done"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btn_blue_rounded"
+            android:fontFamily="@font/dmsans_regular"
+            android:text="@string/get_started"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <RelativeLayout
+        android:id="@+id/view_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_navigation"
+            android:clipToPadding="false"
+            android:overScrollMode="never" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:padding="15dp"
+            android:text="@string/skip"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/pageIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:tabBackground="@drawable/tutorial_viewpager_selector"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/btn_previous_step"
+                    android:layout_width="96dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/btn_white_rounded"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="@string/back"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+
+                <Button
+                    android:id="@+id/btn_next_step"
+                    android:layout_width="96dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/btn_blue_rounded"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

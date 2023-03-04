@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            app:strokeColor="@color/bank_account_tag_green"
+            app:strokeWidth="1dp">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout_cards"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/bank_account_tag_green"
+                app:tabIndicatorGravity="stretch"
+                app:tabMaxWidth="0dp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@android:color/black"
+                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                app:tabTextColor="@color/black" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_cards_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:listitem="@layout/view_cards_list_row" />
+
+        <include layout="@layout/view_form_bottom" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

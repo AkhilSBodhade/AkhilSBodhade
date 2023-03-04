@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.TutorialActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/complete_reg_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".view.activity.TutorialActivity">
+
+        <!-- Full Name -->
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_signup_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:textColor="@color/tutorial_desc_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextRegFormFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edt_text_bg"
+            android:ems="10"
+            android:fontFamily="@font/dmsans_regular"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textSize="18sp" />
+
+
+        <!-- Mobile Number -->
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_signup_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:textColor="@color/tutorial_desc_color"
+            android:textSize="16sp" />
+
+
+        <com.yasserakbbach.phonenumberpicker.PhoneNumberPicker
+            android:id="@+id/editTextRegFormMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:defaultCountry="ind"
+            app:fontFamily="@font/dmsans_regular"
+            app:outlineBorderColor="@color/tutorial_dash_gray"
+            app:textColor="@color/black"
+            app:textSize="18sp" />
+
+        <!-- DOB -->
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_signup_DOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:textColor="@color/tutorial_desc_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextRegFormDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edt_text_bg"
+            android:drawableEnd="@drawable/ic_calendar"
+            android:ems="10"
+            android:focusable="false"
+            android:fontFamily="@font/dmsans_regular"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textSize="18sp" />
+
+
+        <!-- Gender -->
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_signup_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:textColor="@color/tutorial_desc_color"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edt_text_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerRegFormGender"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:entries="@array/Gender"
+                android:fontFamily="@font/dmsans_regular"
+                android:padding="15dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Country -->
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_signup_country_of_residence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:textColor="@color/tutorial_desc_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextRegFormCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edt_text_bg"
+            android:focusable="false"
+            android:ems="10"
+            android:fontFamily="@font/dmsans_regular"
+            android:padding="15dp"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBox_reg_tnc"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:padding="2dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/dmsans_regular"
+                android:text="@string/i_agree_to_the"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/complete_reg_cta_tnc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsans_bold"
+                android:paddingStart="5dp"
+                android:text="@string/terms_and_conditions"
+                android:textColor="@color/primary_blue"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsans_bold"
+                android:text="*"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_complete_reg_next"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_blue_rounded"
+            android:fontFamily="@font/dmsans_regular"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

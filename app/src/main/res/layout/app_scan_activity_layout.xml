@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativeRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerTwo"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomBar" />
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/previewPhotoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomBar"
+        android:background="@color/bg_home" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_home"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_scan_done"
+            android:layout_width="120dp"
+            android:layout_height="44dp"
+            android:background="@drawable/btn_blue_rounded"
+            android:fontFamily="@font/dmsans_regular"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/previousButton"
+            android:layout_width="@dimen/zdc_image_view_icons_dimens"
+            android:layout_height="@dimen/zdc_image_view_icons_dimens"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/zdc_medium_padding"
+            android:padding="@dimen/zdc_x_small_padding"
+            android:src="@drawable/left_arrow"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/nextButton"
+            android:layout_width="@dimen/zdc_image_view_icons_dimens"
+            android:layout_height="@dimen/zdc_image_view_icons_dimens"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/zdc_next_arrow_padding"
+            android:padding="@dimen/zdc_x_small_padding"
+            android:src="@drawable/right_arrow"
+            android:visibility="gone" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>
