@@ -27,13 +27,13 @@
     <string name="signup_otp_instr">An OTP will be sent to you on this email id. You cannot change or edit this email id once registered.</string>
     <string name="signup_email_share_instr">Note - Your email id will not be shared.</string>
     <string name="already_on_myfolio">Already have an account?</string>
-    <string name="enter_registered_email_id">Enter Email ID</string>
+    <string name="enter_registered_email_id">Enter Registered Email ID</string>
     <string name="login_otp_instr">An OTP will be sent to your registered email ID</string>
     <string name="new_to_myfolio">New to MyFolio?</string>
     <string name="sign_up_otp">Sign Up OTP</string>
-    <string name="signup_otp_verfiy_instr">Enter your OTP received on the registered Email ID</string>
+    <string name="signup_otp_verfiy_instr">You will receive your OTP on your registered email Id</string>
     <string name="enter_otp">Enter OTP</string>
-    <string name="your_otp_will_expire_in">Your OTP is valid for</string>
+    <string name="your_otp_will_expire_in">Your OTP will expire in </string>
     <string name="authorise">Authorise</string>
     <string name="terms_and_conditions">terms and conditions</string>
     <string name="i_agree_to_the">I agree to the</string>
